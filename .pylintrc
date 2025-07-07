@@ -1,0 +1,17 @@
+[MASTER]
+ignore=venv,build,dist,migrations
+
+[MESSAGES CONTROL]
+disable=
+    C0114,  # Missing module docstring
+    C0115,  # Missing class docstring
+    C0116,  # Missing function or method docstring
+
+[FORMAT]
+max-line-length=100
+
+[TYPECHECK]
+ignored-modules=numpy,pandas
+
+[REPORTS]
+reports=no
