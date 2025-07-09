@@ -1,13 +1,12 @@
 import tiktoken
 
-
 tokenizer = tiktoken.get_encoding("gpt2")
-text = (
-    "Hello, do you like tea? <|endoftext|> In the sunlit terraces"
-    "of someunknownPlace."
-)
+text = "Akwirw ier"
 integers = tokenizer.encode(text, allowed_special={"<|endoftext|>"})
 print(integers)
+
+for i in integers:
+    print(tokenizer.decode([i]))
 
 strings = tokenizer.decode(integers)
 print(strings)
