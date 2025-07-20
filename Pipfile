@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 tiktoken = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
 
 [dev-packages]
 
